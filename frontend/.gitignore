@@ -1,0 +1,17 @@
+node_modules/
+.next/
+out/
+dist/
+
+# Private and generated data
+data/raw/*
+data/processed/*
+data/failed/*
+
+
+.env
+.env.local
+.env.*.local
+
+*.log
+.DS_Store

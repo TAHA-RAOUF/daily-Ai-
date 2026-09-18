@@ -1,0 +1,511 @@
+{
+  "description": "Deterministic evaluation sample. Never send expected labels to the model.",
+  "total": 30,
+  "cases": [
+    {
+      "id": 820579,
+      "manufacturer": "Audi",
+      "model": "Q3",
+      "freitext": "Audi Q3, QQR-TU 32, km 269032\nFzg. angeliefert, HU/AU fällig, bitte mit Vorabcheck.\nKontrollleuchte Reifendruck ist an.\nBitte Rechnung an die Firma. Leihwagen nein, Kunde wartet.\nTermin steht, Dauer ca. 2 Tage.",
+      "sampleGroup": "service",
+      "expected": {
+        "case_type": "service",
+        "case_kind": "HU/AU",
+        "zones": [],
+        "severity": null,
+        "insurance_type": null,
+        "lifecycle_stage": "laufend"
+      }
+    },
+    {
+      "id": 820869,
+      "manufacturer": "VW",
+      "model": "Caddy",
+      "freitext": "Bremsen: Bremsflüssigkeit fällig, Beläge messen.\nBatterie schwach, Startprobleme morgens.\nKunde bittet um Kostenvoranschlag.",
+      "sampleGroup": "service",
+      "expected": {
+        "case_type": "service",
+        "case_kind": "Bremsen",
+        "zones": [],
+        "severity": null,
+        "insurance_type": null,
+        "lifecycle_stage": "abgeschlossen"
+      }
+    },
+    {
+      "id": 820879,
+      "manufacturer": "BMW",
+      "model": "X3",
+      "freitext": "Kunde kommt ohne Termin, Räderwechsel Sommer auf Winter, Einlagerung vorhanden.\nKunde holt am Abend ab. Hol- und Bringservice gewünscht.\n~~~~~~~~~~~~~\n15.08.26 12:32 Teiledienst: Freigabe Versicherung eingetroffen\n21.08.26 13:32 Lack: Fzg. in Halle, Zerlegung begonnen",
+      "sampleGroup": "service",
+      "expected": {
+        "case_type": "service",
+        "case_kind": "Räder und Reifen",
+        "zones": [],
+        "severity": null,
+        "insurance_type": null,
+        "lifecycle_stage": "laufend"
+      }
+    },
+    {
+      "id": 820951,
+      "manufacturer": "BMW",
+      "model": "2er Active Tourer",
+      "freitext": "KD meldet telefonisch: Ölwechsel inkl. Filter nach Serviceplan.\nKunde holt am Abend ab.\nTermin steht, Dauer ca. 2 Tage.\n~~~~~~~~~~~~~\n13.07.26 21:49 SB: Rechnung geschrieben\n22.07.26 02:49 TS: Kunde meldet sich wegen Termin",
+      "sampleGroup": "service",
+      "expected": {
+        "case_type": "service",
+        "case_kind": "Ölwechsel",
+        "zones": [],
+        "severity": null,
+        "insurance_type": null,
+        "lifecycle_stage": "laufend"
+      }
+    },
+    {
+      "id": 821277,
+      "manufacturer": "BMW",
+      "model": "X3",
+      "freitext": "Kunde kommt ohne Termin, Bremsen quietschen, bitte prüfen.\nScheibenwischer schmieren, bitte erneuern.\nLeihwagen ja.\n~~~~~~~~~~~~~\n27.06.26 11:40 Lack: Leihwagen reserviert\n03.07.26 11:40 S. Beck: Nachtrag: Kunde bittet um Verschiebung",
+      "sampleGroup": "service",
+      "expected": {
+        "case_type": "service",
+        "case_kind": "Bremsen",
+        "zones": [],
+        "severity": null,
+        "insurance_type": null,
+        "lifecycle_stage": "fertig"
+      }
+    },
+    {
+      "id": 821520,
+      "manufacturer": "Skoda",
+      "model": "Scala",
+      "freitext": "Kunde meldet: Inspektion mit Pollenfilter und Bremsflüssigkeit.\nLeihwagen ja.\n~~~~~~~~~~~~~\n13.01.26 15:08 Lack: Fzg. gewaschen, abholbereit\n15.01.26 15:08 J. Moser: Fzg. in Halle, Zerlegung begonnen\n21.01.26 15:08 J. Moser: Rechnung geschrieben",
+      "sampleGroup": "service",
+      "expected": {
+        "case_type": "service",
+        "case_kind": "Inspektion",
+        "zones": [],
+        "severity": null,
+        "insurance_type": null,
+        "lifecycle_stage": "fertig"
+      }
+    },
+    {
+      "id": 821583,
+      "manufacturer": "Seat",
+      "model": "Ateca",
+      "freitext": "Seat Ateca, QQZ-E 701\nHU/AU: TÜV/HU mit Abgasuntersuchung.\nKontrollleuchte Reifendruck ist an.\nRückruf erwünscht bevor zusätzliche Arbeiten. Hol- und Bringservice gewünscht.\nTeile bestellt, Liefertermin offen.\n~~~~~~~~~~~~~\n06.07.26 10:59 L. Riedel: Ersatzteil eingetroffen, Termin vereinbaren\n07.07.26 12:59 SB: Leihwagen reserviert\n10.07.26 17:59 Servicebüro: Kalkulation fertig, an Prüfer",
+      "sampleGroup": "service",
+      "expected": {
+        "case_type": "service",
+        "case_kind": "HU/AU",
+        "zones": [],
+        "severity": null,
+        "insurance_type": null,
+        "lifecycle_stage": "neu"
+      }
+    },
+    {
+      "id": 821901,
+      "manufacturer": "VW",
+      "model": "Touran",
+      "freitext": "VW Touran, XQD-K 24\nHU/AU: TÜV Termin, Fzg. vorher durchsehen.\nKontrollleuchte Reifendruck ist an.\nKunde wünscht Kostenrahmen vorab.\nErsatzteil im Rückstand, Kunde informiert.",
+      "sampleGroup": "service",
+      "expected": {
+        "case_type": "service",
+        "case_kind": "HU/AU",
+        "zones": [],
+        "severity": null,
+        "insurance_type": null,
+        "lifecycle_stage": "laufend"
+      }
+    },
+    {
+      "id": 822129,
+      "manufacturer": "Skoda",
+      "model": "Scala",
+      "freitext": "Lt. Kunde: TÜV Termin, Fzg. vorher durchsehen.\nKunde wartet, bitte zügig.\n~~~~~~~~~~~~~\n01.07.26 10:28 TS: Leihwagen reserviert\n08.07.26 14:28 J. Martens: Endkontrolle offen\n15.07.26 15:28 Annahme: Rückruf nicht erreicht, Mailbox",
+      "sampleGroup": "service",
+      "expected": {
+        "case_type": "service",
+        "case_kind": "HU/AU",
+        "zones": [],
+        "severity": null,
+        "insurance_type": null,
+        "lifecycle_stage": "laufend"
+      }
+    },
+    {
+      "id": 822311,
+      "manufacturer": "Seat",
+      "model": "Leon",
+      "freitext": "Bremsen: Bremsscheiben hinten riefig, Kunde meldet Rubbeln.\nKunde meldet Geräusch beim Lenken.\nKunde holt am Abend ab.\nBitte Wiedervorlage in einer Woche.",
+      "sampleGroup": "service",
+      "expected": {
+        "case_type": "service",
+        "case_kind": "Bremsen",
+        "zones": [],
+        "severity": null,
+        "insurance_type": null,
+        "lifecycle_stage": "laufend"
+      }
+    },
+    {
+      "id": 820002,
+      "manufacturer": "Seat",
+      "model": "Ateca",
+      "freitext": "Kunde bringt Fzg., Steinschlag, Schaden am 21.04. bemerkt. Steinschlag Windschutzscheibe im Sichtfeld Fahrer, Reparatur nicht möglich, Austausch nötig.\nKunde bittet um KVA. Leihwagen ja, Hol- und Bringservice ja.\nSelbstzahler, Rechnung an Kunde.\nKunde ist informiert, meldet sich.\n~~~~~~~~~~~~~\n03.05.26 12:00 I. Horn: Ersatzteil eingetroffen, Termin vereinbaren\n08.05.26 14:00 Annahme: Endkontrolle offen",
+      "sampleGroup": "single-zone-damage",
+      "expected": {
+        "case_type": "damage",
+        "case_kind": "Steinschlag",
+        "zones": [
+          "Windschutzscheibe"
+        ],
+        "severity": "mittel",
+        "insurance_type": "selbstzahler",
+        "lifecycle_stage": "abgeschlossen"
+      }
+    },
+    {
+      "id": 820141,
+      "manufacturer": "Seat",
+      "model": "Leon",
+      "freitext": "Seat Leon, ZQM-Z 649\nKunde meldet: Parkschaden, Kunde hat Fotos gemacht. Schaden an Stoßstange hinten rechts, Kunststoff eingedrückt, punktuell, mehrere Stellen.\nHol- und Bringservice gewünscht.\nGegnerische Haftpflicht reguliert, Haftung anerkannt.\nKunde ist informiert, meldet sich.\n~~~~~~~~~~~~~\n14.06.26 17:32 TS: Kalkulation fertig, an Prüfer",
+      "sampleGroup": "single-zone-damage",
+      "expected": {
+        "case_type": "damage",
+        "case_kind": "Parkschaden",
+        "zones": [
+          "Stoßstange hinten rechts"
+        ],
+        "severity": "mittel",
+        "insurance_type": "haftpflicht_gegner",
+        "lifecycle_stage": "laufend"
+      }
+    },
+    {
+      "id": 820498,
+      "manufacturer": "Seat",
+      "model": "Ateca",
+      "freitext": "Kunde kommt ohne Termin, Steinschlag auf der Autobahn. Windschutzscheibe: Einschlag außerhalb Sichtfeld, Harzreparatur angeboten.\nAbholung durch Kunde am Nachmittag.\nTeilkasko, SB 150 EUR, KVA an Vers.\nNach Zerlegung nachkalkulieren.\nVersicherung: Talblick Versicherung, Schadennr. 38320459.\n~~~~~~~~~~~~~\n04.08.26 13:57 J. Wendt: Fzg. in Halle, Zerlegung begonnen",
+      "sampleGroup": "single-zone-damage",
+      "expected": {
+        "case_type": "damage",
+        "case_kind": "Steinschlag",
+        "zones": [
+          "Windschutzscheibe"
+        ],
+        "severity": "schwer",
+        "insurance_type": "teilkasko",
+        "lifecycle_stage": "neu"
+      }
+    },
+    {
+      "id": 820709,
+      "manufacturer": "Ford",
+      "model": "Focus Turnier",
+      "freitext": "Kunde kommt ohne Termin, Rangierschaden, Poller übersehen. Träger verformt an Stoßstange hinten, über zwei Bauteile.\nLeihwagen ja, Hol- und Bringservice ja.\nKunde zahlt selbst, KVA vorab.\n~~~~~~~~~~~~~\n11.01.26 12:25 S. Baumann: Teile bestellt, Nachricht an Dispo",
+      "sampleGroup": "single-zone-damage",
+      "expected": {
+        "case_type": "damage",
+        "case_kind": "Rangierschaden",
+        "zones": [
+          "Stoßstange hinten"
+        ],
+        "severity": "schwer",
+        "insurance_type": "selbstzahler",
+        "lifecycle_stage": "fertig"
+      }
+    },
+    {
+      "id": 821214,
+      "manufacturer": "Opel",
+      "model": "Corsa",
+      "freitext": "Opel Corsa, ZQC-S 9150, km 8307\nFzg. vorgefahren, Parkschaden auf dem Parkplatz. Kotflügel vorne links ca. 40 cm Lack abgeplatzt.\nKunde fragt nach Smart Repair. Abholung durch Kunde am Nachmittag.\nOhne Versicherung, Kunde entscheidet nach Preis.\nErsatzteil nur komplett lieferbar, Austausch statt Instandsetzung.\n~~~~~~~~~~~~~\n20.05.26 12:54 TS: Leihwagen reserviert",
+      "sampleGroup": "single-zone-damage",
+      "expected": {
+        "case_type": "damage",
+        "case_kind": "Parkschaden",
+        "zones": [
+          "Kotflügel vorne links"
+        ],
+        "severity": "mittel",
+        "insurance_type": "selbstzahler",
+        "lifecycle_stage": "neu"
+      }
+    },
+    {
+      "id": 820223,
+      "manufacturer": "Mercedes",
+      "model": "Sprinter",
+      "freitext": "Kunde bringt Fzg., Auffahrunfall, Hergang lt. Kunde unklar. Kotflügel hinten links Schrammen, ca. 15 cm.\nWeiterer Schaden Kotflügel hinten rechts, Druckstelle.\nKunde möchte wissen ob Instandsetzung reicht. Abholung durch Kunde am Nachmittag.\nGegnerische Haftpflicht reguliert, Haftung anerkannt.\nBitte Wiedervorlage in einer Woche.\n~~~~~~~~~~~~~\n01.03.26 16:29 Servicebüro: Kunde meldet sich wegen Termin\n03.03.26 20:29 SB: Nachtrag: Kunde bittet um Verschiebung",
+      "sampleGroup": "multi-zone-damage",
+      "expected": {
+        "case_type": "damage",
+        "case_kind": "Auffahrunfall",
+        "zones": [
+          "Kotflügel hinten links",
+          "Kotflügel hinten rechts"
+        ],
+        "severity": "leicht",
+        "insurance_type": "haftpflicht_gegner",
+        "lifecycle_stage": "laufend"
+      }
+    },
+    {
+      "id": 820258,
+      "manufacturer": "Opel",
+      "model": "Vivaro",
+      "freitext": "Fzg. angeliefert, Parkschaden, Verursacher unbekannt. An Außenspiegel links Teil gerissen und lose (handtellergroß).\nWeiterer Schaden Stoßstange vorne links, großflächig deformiert.\nKunde will erst nach Preis entscheiden. Kunde wartet vor Ort.\nGesteuerter Auftrag, RKÜ liegt noch nicht vor.\nFreigabe eingetroffen, Teile bestellt.\nSteuerung: Seeblick Leasing.",
+      "sampleGroup": "multi-zone-damage",
+      "expected": {
+        "case_type": "damage",
+        "case_kind": "Parkschaden",
+        "zones": [
+          "Außenspiegel links",
+          "Stoßstange vorne links"
+        ],
+        "severity": "schwer",
+        "insurance_type": "gesteuert",
+        "lifecycle_stage": "laufend"
+      }
+    },
+    {
+      "id": 820558,
+      "manufacturer": "BMW",
+      "model": "1er",
+      "freitext": "BMW 1er, ZQA-EZ 14\nFzg. angeliefert, Rangierschaden, Kunde schildert Hergang selbst. Schaden an Kotflügel hinten rechts, kleine Delle, ca. 25 cm.\nZusätzlich Kotflügel hinten links betroffen, kleine Delle.\nBitte KVA vor Reparatur abstimmen. Leihwagen nein, Kunde wartet.\nKunde zahlt selbst, KVA vorab.\nKunde ist informiert, meldet sich.\n~~~~~~~~~~~~~\n28.02.26 22:35 S. Herrmann: Rechnung geschrieben",
+      "sampleGroup": "multi-zone-damage",
+      "expected": {
+        "case_type": "damage",
+        "case_kind": "Rangierschaden",
+        "zones": [
+          "Kotflügel hinten rechts",
+          "Kotflügel hinten links"
+        ],
+        "severity": "leicht",
+        "insurance_type": "selbstzahler",
+        "lifecycle_stage": "abgeschlossen"
+      }
+    },
+    {
+      "id": 821084,
+      "manufacturer": "BMW",
+      "model": "X1",
+      "freitext": "BMW X1, QQK-ZX 4713, km 98546\nAnruf Kunde: Auffahrunfall, Hergang lt. Kunde unklar. Kratzer bis auf Grundierung an Stoßstange hinten links, ca. 40 cm.\nAuch Stoßstange hinten beschädigt (Kunststoff eingedrückt).\nStoßstange vorne rechts ebenfalls: Riss im Lack.\nKunde fragt nach Reparaturdauer.\nSteuerung über Flottenpartner, Freigabe schriftlich nötig.\nTeile bestellt, Liefertermin offen.\n~~~~~~~~~~~~~\n17.04.26 16:05 Dispo: Kunde meldet sich wegen Termin",
+      "sampleGroup": "multi-zone-damage",
+      "expected": {
+        "case_type": "damage",
+        "case_kind": "Auffahrunfall",
+        "zones": [
+          "Stoßstange hinten links",
+          "Stoßstange hinten",
+          "Stoßstange vorne rechts"
+        ],
+        "severity": "mittel",
+        "insurance_type": "gesteuert",
+        "lifecycle_stage": "laufend"
+      }
+    },
+    {
+      "id": 821300,
+      "manufacturer": "Audi",
+      "model": "Q2",
+      "freitext": "Audi Q2, XQS-DR 7552, km 333787\nKunde kommt ohne Termin, Parkschaden auf dem Parkplatz. Schaden an Schweller links, Aufnahme abgerissen, handtellergroß.\nAuch Kotflügel hinten rechts beschädigt (Blech verzogen).\nHol- und Bringservice gewünscht.\nVollkasko, Rückstufung mit Kunde besprochen.\nFotos liegen im Vorgang.\n~~~~~~~~~~~~~\n21.02.26 17:20 SB: Rechnung geschrieben",
+      "sampleGroup": "multi-zone-damage",
+      "expected": {
+        "case_type": "damage",
+        "case_kind": "Parkschaden",
+        "zones": [
+          "Schweller links",
+          "Kotflügel hinten rechts"
+        ],
+        "severity": "schwer",
+        "insurance_type": "vollkasko",
+        "lifecycle_stage": "laufend"
+      }
+    },
+    {
+      "id": 821314,
+      "manufacturer": "Audi",
+      "model": "A6 Avant",
+      "freitext": "Kunde meldet: Vandalismus, Schaden am 25.01. entdeckt. Lackabrieb an Außenspiegel rechts, ca. 5 cm.\nWeiterer Schaden Stoßstange vorne rechts, kleine Delle.\nZusätzlich Tür hinten rechts betroffen, Kratzer, Lack nicht durch.\nKunde möchte Fzg. bis Monatsende zurück. Kunde wartet vor Ort.\nVollkasko, SB 500 EUR, Schadenmeldung raus.\nTermin steht, Dauer ca. 2 Tage.\n~~~~~~~~~~~~~\n30.01.26 18:32 Lack: Kunde meldet sich wegen Termin",
+      "sampleGroup": "multi-zone-damage",
+      "expected": {
+        "case_type": "damage",
+        "case_kind": "Vandalismus",
+        "zones": [
+          "Außenspiegel rechts",
+          "Stoßstange vorne rechts",
+          "Tür hinten rechts"
+        ],
+        "severity": "leicht",
+        "insurance_type": "vollkasko",
+        "lifecycle_stage": "abgeschlossen"
+      }
+    },
+    {
+      "id": 821533,
+      "manufacturer": "Mercedes",
+      "model": "B-Klasse",
+      "freitext": "Lt. Kunde: Parkschaden, Verursacher unbekannt. Kotflügel hinten links kleine Delle, punktuell, mehrere Stellen.\nAuch Fahrertür beschädigt (feine Kratzspuren).\nKunde fragt nach Reparaturdauer. Leihwagen nein, Kunde wartet.\nSelbstzahler, Rechnung an Kunde.\nFreigabe eingetroffen, Teile bestellt.\n~~~~~~~~~~~~~\n20.06.26 12:36 O. Otto: Kalkulation fertig, an Prüfer",
+      "sampleGroup": "multi-zone-damage",
+      "expected": {
+        "case_type": "damage",
+        "case_kind": "Parkschaden",
+        "zones": [
+          "Kotflügel hinten links",
+          "Fahrertür"
+        ],
+        "severity": "leicht",
+        "insurance_type": "selbstzahler",
+        "lifecycle_stage": "fertig"
+      }
+    },
+    {
+      "id": 821794,
+      "manufacturer": "Mercedes",
+      "model": "GLC",
+      "freitext": "Mercedes GLC, ZQ-KG 378\nKdune kommt ohne Termin, Hagelschaden, mehrere Fzg. aus dem Ort betroffen. Hagelschlag flächig, Heckklappe mit zahlreichen Dellen.\nHagel: Dach betroffen, Lack laut Sichtprüfung intakt.\nHagel: Motorhaube betroffen, Lack laut Sichtprüfung intakt.\nKunde möchte Fzg. bis Monatsende zurück. Ersatzwagen geklärt, Klasse klein.\nTeilkasko, SB 150 EUR, KVA an Vers.\nFzg. steht auf dem Hof.\n~~~~~~~~~~~~~\n29.03.26 11:59 T. Jung: Fzg. in Halle, Zerlegung begonnen\n02.04.26 16:59 T. Jung: Freigabe Versicherung eingetroffen\n10.04.26 20:59 T. Jung: Ersatzteil eingetroffen, Termin vereinbaren",
+      "sampleGroup": "multi-zone-damage",
+      "expected": {
+        "case_type": "damage",
+        "case_kind": "Hagelschaden",
+        "zones": [
+          "Heckklappe",
+          "Dach",
+          "Motorhaube"
+        ],
+        "severity": "schwer",
+        "insurance_type": "teilkasko",
+        "lifecycle_stage": "abgeschlossen"
+      }
+    },
+    {
+      "id": 821961,
+      "manufacturer": "VW",
+      "model": "T-Roc",
+      "freitext": "Kunde meldet: Hagelschaden, mehrere Fzg. aus dem Ort betroffen. Hagelschlag flächig, Dach mit zahlreichen Dellen.\nMotorhaube übersät mit Dellen, Zählung Dellenkarte offen.\nLeihwagen ja.\nTK deckt Glasschaden, SB 150 EUR.\nNach Zerlegung nachkalkulieren.\n~~~~~~~~~~~~~\n09.06.26 10:52 Servicebüro: Freigabe Versicherung eingetroffen\n11.06.26 14:52 Servicebüro: KV an Kunde verschickt\n14.06.26 19:52 Lack: Rechnug geschrieben",
+      "sampleGroup": "multi-zone-damage",
+      "expected": {
+        "case_type": "damage",
+        "case_kind": "Hagelschaden",
+        "zones": [
+          "Dach",
+          "Motorhaube"
+        ],
+        "severity": "mittel",
+        "insurance_type": "teilkasko",
+        "lifecycle_stage": "laufend"
+      }
+    },
+    {
+      "id": 823577,
+      "manufacturer": "VW",
+      "model": "Golf",
+      "freitext": "Bei der Annahme festgestellt: Wildunfall auf der Landstraße. Bauteil durchgebrochen an Kotflügel vorne rechts, ca. 40 cm.\nAuch Stoßstange vorne links beschädigt (stark eingedrückt).\nHol- und Bringservice gewünscht.\nTeilkasko läuft, SB laut Police 300 EUR.\nBitte Kalkulation erstellen.",
+      "sampleGroup": "multi-zone-damage",
+      "expected": {
+        "case_type": "damage",
+        "case_kind": "Wildunfall",
+        "zones": [
+          "Kotflügel vorne rechts",
+          "Stoßstange vorne links"
+        ],
+        "severity": "schwer",
+        "insurance_type": "teilkasko",
+        "lifecycle_stage": "abgeschlossen"
+      }
+    },
+    {
+      "id": 823013,
+      "manufacturer": "Opel",
+      "model": "Mokka",
+      "freitext": "Anruf Kunde: Rangierschaden, Poller übersehen. Träger verformt an Stoßstange vorne, ca. 5 cm.\nKunde möchte wissen ob Instandsetzung reicht. Hol- und Bringservice gewünscht.\nGesteuerter Auftrag, RKÜ liegt noch nicht vor.\nErsatzteil nur komplett lieferbar, Austausch statt Instandsetzung.\nSteuerung: Talblick Fleet.\n~~~~~~~~~~~~~\n16.06.26 12:01 Servicebüro: KV an Kunde verschickt\n22.06.26 12:01 Dispo: Fzg. in Halle, Zerlegung begonnen\n30.06.26 12:01 Dispo: Rückruf nicht erreicht, Mailbox",
+      "sampleGroup": "heavy-damage",
+      "expected": {
+        "case_type": "damage",
+        "case_kind": "Rangierschaden",
+        "zones": [
+          "Stoßstange vorne"
+        ],
+        "severity": "schwer",
+        "insurance_type": "gesteuert",
+        "lifecycle_stage": "fertig"
+      }
+    },
+    {
+      "id": 825880,
+      "manufacturer": "VW",
+      "model": "Caddy",
+      "freitext": "VW Caddy, XQL-XU 10\nKD meldet telefonisch: Steinschlag bei der Baustellenfahrt. Windschutzscheibe mit Einschlag ca. 2 cm, Fahrerseite unten.\nBitte KVA vor Reparatur abstimmen. Leihwagen ja.\nTeilkasko, SB 150 EUR, KVA an Vers.\nBitte Lackabgleich, Farbton prüfen.\nVersicherung: Weidenhof Sach, Schadennr. 28434785.\n~~~~~~~~~~~~~\n05.03.26 20:11 Dispo: Ersatzteil eingetroffen, Termin vereinbaren\n08.03.26 20:11 E. Lang: Freigabe Versicherung eingetroffen\n11.03.26 20:11 E. Lang: Nachtrag: Kunde bittet um Verschiebung",
+      "sampleGroup": "heavy-damage",
+      "expected": {
+        "case_type": "damage",
+        "case_kind": "Steinschlag",
+        "zones": [
+          "Windschutzscheibe"
+        ],
+        "severity": "schwer",
+        "insurance_type": "teilkasko",
+        "lifecycle_stage": "fertig"
+      }
+    },
+    {
+      "id": 826178,
+      "manufacturer": "Seat",
+      "model": "Arona",
+      "freitext": "Seat Arona, XQL-N 630, km 203302\nKD meldet telefonisch: Wildunfall, Reh gegen Front, Wildbescheinigung liegt vor. Schaden an Motorhaube, Aufnahme abgerissen, punktuell, mehrere Stellen.\nWeiterer Schaden Stoßstange vorne links, Aufnahme abgerissen.\nKVA erwünscht, bitte per Mail. Fzg. bleibt über Nacht da.\nTeilkasko, SB 150 EUR, KVA an Vers.\nTermin nach Teileeingang.\n~~~~~~~~~~~~~\n05.08.26 10:11 Servicebüro: Rechnung geschrieben",
+      "sampleGroup": "heavy-damage",
+      "expected": {
+        "case_type": "damage",
+        "case_kind": "Wildunfall",
+        "zones": [
+          "Motorhaube",
+          "Stoßstange vorne links"
+        ],
+        "severity": "schwer",
+        "insurance_type": "teilkasko",
+        "lifecycle_stage": "abgeschlossen"
+      }
+    },
+    {
+      "id": 829369,
+      "manufacturer": "Skoda",
+      "model": "Karoq",
+      "freitext": "Skoda Karoq, QQH-X 1595\nAnruf Kunde: Rangierschaden an der Laderampe. An Stoßstange hinten Bauteil durchgebrochen (handtellergroß).\nWeiterer Schaden Kotflügel vorne links, Aufnahme abgerissen.\nKunde bittet um Rückruf bis Freitag.\nHaftpflicht Gegner, Gutachter beauftragt.\nFzg. steht auf dem Hof.",
+      "sampleGroup": "heavy-damage",
+      "expected": {
+        "case_type": "damage",
+        "case_kind": "Rangierschaden",
+        "zones": [
+          "Stoßstange hinten",
+          "Kotflügel vorne links"
+        ],
+        "severity": "schwer",
+        "insurance_type": "haftpflicht_gegner",
+        "lifecycle_stage": "neu"
+      }
+    },
+    {
+      "id": 829689,
+      "manufacturer": "VW",
+      "model": "Touran",
+      "freitext": "Fzg. vorgefahren, Vandalismus, Kunde hat Anzeige aufgenommen. Schaden an Kotflügel hinten rechts, Aufnahme abgerissen, ca. 5 cm.\nLeihwagen ja.\nTK deckt Glasschaden, SB 150 EUR.\nBitte Wiedervorlage in einer Woche.\n~~~~~~~~~~~~~\n02.02.26 18:56 U. Brandt: Endkontrolle offen",
+      "sampleGroup": "heavy-damage",
+      "expected": {
+        "case_type": "damage",
+        "case_kind": "Vandalismus",
+        "zones": [
+          "Kotflügel hinten rechts"
+        ],
+        "severity": "schwer",
+        "insurance_type": "teilkasko",
+        "lifecycle_stage": "neu"
+      }
+    }
+  ]
+}
